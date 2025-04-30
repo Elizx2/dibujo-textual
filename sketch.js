@@ -28,7 +28,6 @@ function keyPressed() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
   
   painting = createGraphics(windowWidth, windowHeight);
   painting.clear();
