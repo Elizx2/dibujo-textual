@@ -17,6 +17,15 @@ function mousePressed() {
   console.log(poses);
 }
 
+function keyPressed() {
+  if (key === 'z') {
+    painting.clear();
+  }
+  if (key === 's') {
+    save(painting, 'mi_dibujo.png');
+            }
+}
+
 function setup() {
   // lienzo de pantalla
   createCanvas(windowWidth, windowHeight);
@@ -58,9 +67,13 @@ function draw() {
       let g = random(255);
       let b = random(255);
 
-      painting.fill(r,g,b);
-      painting.textSize(40);
-      painting.text("BOMBADRILO COCODRILO", nose.x, nose.y);
+      painting.fill(r, g, b);
+      painting.stroke(0);
+      painting.strokeWeight(2);
+      painting.textSize(30);
+      painting.text("gigi", nose.x, nose.y);
+      painting.noStroke();
+
     }
     
   }
@@ -86,7 +99,11 @@ function draw() {
        // aquí colocamos la capa para dibujar hecha con createGraphics
        image(painting, 0, 0); 
       }
+      
 
-function windowsResized(){
-  resizedCanvas(windowWidth, windowHeight);
-}
+function windowResized() {
+ resizeCanvas(windowWidth, windowHeight);
+  painting = createGraphics(windowWidth, windowHeight);
+  painting.clear();
+      }
+      
