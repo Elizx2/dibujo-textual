@@ -1,2 +1,9 @@
-# dibujo-textual
-pieza interactiva de Aprendizaje de Maquina
+# Cuerpo, texto y presencia
+
+Este proyecto es una exploración del cuerpo como herramienta expresiva, donde el movimiento se transforma en palabra. A través del uso de aprendizaje de máquina, la obra convierte la presencia física en un acto de escritura visual, permitiendo que el cuerpo trace frases y pensamientos en el espacio mediante gestos captados en tiempo real.
+
+ Nace del deseo de transformar la introspección en imagen, de habitar la pantalla con el lenguaje no verbal del cuerpo, y de darle forma al silencio interno a través de textos que flotan, se desplazan y emergen desde el rostro, especialmente desde un punto de referencia tan simbólico como la nariz. Esta pieza no busca la perfección del trazo, sino la huella emocional que el cuerpo puede dejar a su paso. En esta versión, la interfaz también permite al usuario introducir sus propias frases, estableciendo así un diálogo entre cuerpo y máquina.
+
+Desde lo técnico, la pieza fue creada con la biblioteca de p5.js, una herramienta de programación creativa en JavaScript orientada a artistas y diseñadores, en conjunto con la librería ml5.js, que facilita el acceso a modelos de aprendizaje automático. Se utiliza el modelo de bodyPose, que rastrea los puntos clave del cuerpo humano, para obtener la posición de la nariz. Este punto actúa como un pincel invisible que dibuja texto sobre una capa gráfica.
+
+El aprendizaje de máquina en esta pieza no está orientado a la predicción ni al análisis, sino al lenguaje del cuerpo. Lejos de automatizar, su función aquí es abrir una nueva vía expresiva que combina arte digital, performance y escritura efímera. Así, lo que antes era una herramienta de análisis del movimiento, se convierte en una pluma corporal que escribe en el aire pensamientos que no siempre pueden decirse en voz alta.
