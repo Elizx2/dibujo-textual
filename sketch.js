@@ -71,7 +71,7 @@ function draw() {
       painting.stroke(0);
       painting.strokeWeight(2);
       painting.textSize(30);
-      painting.text("gigi", nose.x, nose.y);
+      painting.text("Esto no es una nariz", nose.x, nose.y);
       painting.noStroke();
 
     }
