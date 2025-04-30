@@ -64,7 +64,7 @@ function draw() {
       painting.fill(r, g, b);
       painting.stroke(0);
       painting.strokeWeight(2);
-      painting.textSize(30);
+      painting.textSize(50);
       painting.text("Esto no es una nariz", nose.x, nose.y);
       painting.noStroke();
 
