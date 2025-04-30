@@ -27,27 +27,22 @@ function keyPressed() {
 }
 
 function setup() {
-  // lienzo de pantalla
   createCanvas(windowWidth, windowHeight);
 
-  // creamos una capa para gráficos con dimensión de pantalla
+  
   painting = createGraphics(windowWidth, windowHeight);
   painting.clear();
-    // Crea el video y lo esconde
-    // Flipped true solo para tener efecto espejo
     video = createCapture(VIDEO, {flipped:true});
     video.size(windowWidth, windowHeight);
     video.hide();
-    // Comienza a detectar poses en la webcam de video
     bodyPose.detectStart(video, gotPoses);
-    // Toma la información de conexión del esqueleto
     connections = bodyPose.getSkeleton();
     
   }
 
-  // función de llamado para cuando el modelo retgresa datos de pose
+  
 function gotPoses(results) {
-  // Guarda el resultado del modelo en una variable global
+  
   poses = results;
 }
 
@@ -60,7 +55,7 @@ function draw() {
 
     //nariz
     let pose = poses[0];
-    let nose = pose.keypoints[0]; // índice 0 es la nariz
+    let nose = pose.keypoints[0]; // la nariz
     if (nose.confidence > 0.5) {
       // Generar color aleatorio
       let r = random(255);
